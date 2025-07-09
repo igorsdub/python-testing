@@ -1,0 +1,11 @@
+[workspace]
+authors = ["Igors Dubanevics <26872977+igorsdub@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "python-testing"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+pytest = ">=8.4.1,<9"

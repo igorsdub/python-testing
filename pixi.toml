@@ -1,4 +1,4 @@
-[workspace]
+[project]
 authors = ["Igors Dubanevics <26872977+igorsdub@users.noreply.github.com>"]
 channels = ["conda-forge"]
 name = "python-testing"

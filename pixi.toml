@@ -2,7 +2,7 @@
 authors = ["Igors Dubanevics <26872977+igorsdub@users.noreply.github.com>"]
 channels = ["conda-forge"]
 name = "python-testing"
-platforms = ["osx-arm64"]
+platforms = ["osx-arm64", "linux-64"]
 version = "0.1.0"
 
 [tasks]

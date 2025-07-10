@@ -1,4 +1,4 @@
-from src.mean import *
+from src.mean import mean
 
 def test_ints():
     num_list = [1,2,3,4,5]

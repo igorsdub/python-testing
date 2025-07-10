@@ -14,3 +14,13 @@ def test_fib6():
     # test internal point
     obs = fib(6)
     assert obs == 8
+
+def test_fib_negative():
+    # test negative input
+    obs = fib(-1)
+    assert obs == NotImplemented
+
+def test_fib_nonint():
+    # test non-integer input
+    obs = fib(2.5)
+    assert obs == NotImplemented

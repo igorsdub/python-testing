@@ -1,4 +1,4 @@
-from mod import c
+from src.mod import c
 
 def test_c():
     exp = 6

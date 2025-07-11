@@ -5,8 +5,19 @@ name = "python-testing"
 platforms = ["osx-arm64", "linux-64"]
 version = "0.1.0"
 
-[tasks]
-test = "pytest"
+[tasks.test]
+cmd  = "pytest {% if coverage %} --cov {% endif %} -v"
+args = [{ arg = "coverage", default = "" }]
+
+[tasks.lint]
+cmd  = "ruff check {% if fix %} --fix {% endif %} src/"
+args = [{ arg = "fix", default = "" }]
+
+[tasks.ci]
+depends-on = [
+  { task = "lint", args = ["fix"] },
+  { task = "test", args = ["coverage"] }
+]
 
 [dependencies]
 pytest = ">=8.4.1,<9"
